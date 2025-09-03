@@ -4,22 +4,18 @@ This repository contains teaching materials and a Jupyter Notebook for practicin
 
 ## 🚀 Quick start
 
-```bash
-# 1. Clone this repo
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
 
-# 2. Create and activate a virtual environment (recommended)
+# 1. Create and activate a virtual environment (recommended)
 python -m venv .venv
 # On Windows:
 .venv\Scripts\activate
 # On macOS/Linux:
 source .venv/bin/activate
 
-# 3. Install requirements
+# 2. Install requirements
 pip install -r requirements.txt
 
-# 4. Launch Jupyter
+# 3. Launch Jupyter
 jupyter lab   # or: jupyter notebook
 ```
 
@@ -67,16 +63,8 @@ By working through the notebook, students will:
 - Filter and clean datasets in **pandas**
 - Work with categorical variables (e.g., origin of cars)
 
----
 
-## 🧑‍🏫 Instructor notes
 
-- Place `Auto.csv` inside the `data/` folder.  
-- Ensure students activate the correct virtual environment before running Jupyter.  
-- Students can export results via **File → Download as → HTML** for submission.
 
----
-
-## 📜 License
 
 Educational use only.
