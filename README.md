@@ -1,6 +1,6 @@
 🔧 Environment Setup (inft6201)
 🖥️ macOS / Linux
-Option A — venv + pip
+## Option A — venv + pip
 # 1. Create a virtual environment
 python3 -m venv inft6201
 
@@ -21,7 +21,7 @@ Start Jupyter:
 
 jupyter lab   # or: jupyter notebook
 
-Option B — Conda
+## Option B — Conda
 # 1. Create environment from environment.yml
 conda env create -f environment.yml -n inft6201
 
