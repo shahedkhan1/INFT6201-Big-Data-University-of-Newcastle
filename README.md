@@ -1,70 +1,74 @@
-# Basic Statistics with Auto.csv
+🔧 Environment Setup (inft6201)
+🖥️ macOS / Linux
+Option A — venv + pip
+# 1. Create a virtual environment
+python3 -m venv inft6201
 
-This repository contains teaching materials and a Jupyter Notebook for practicing basic statistics using the **Auto.csv** dataset.
+# 2. Activate it
+source inft6201/bin/activate
 
-## 🚀 Quick start
+# 3. Upgrade pip
+pip install --upgrade pip
 
-
-# 1. Create and activate a virtual environment (recommended)
-python -m venv .venv
-# On Windows:
-.venv\Scripts\activate
-# On macOS/Linux:
-source .venv/bin/activate
-
-# 2. Install requirements
+# 4. Install project dependencies
 pip install -r requirements.txt
 
-# 3. Launch Jupyter
+# 5. (Optional) Register kernel for Jupyter
+python -m ipykernel install --user --name=inft6201 --display-name "Python (inft6201)"
+
+
+Start Jupyter:
+
 jupyter lab   # or: jupyter notebook
-```
 
-Open the notebook under `/notebooks` and run the cells.
+Option B — Conda
+# 1. Create environment from environment.yml
+conda env create -f environment.yml -n inft6201
 
----
+# 2. Activate
+conda activate inft6201
 
-## 📁 Repository structure
+# 3. Register kernel
+python -m ipykernel install --user --name=inft6201 --display-name "Python (inft6201)"
 
-```
-<repo-root>/
-├─ data/
-│  └─ Auto.csv
-├─ notebooks/
-│  └─ Basic_Statistics.ipynb
-├─ requirements.txt
-└─ README.md
-```
 
----
+Run Jupyter:
 
-## 🧰 Requirements
+jupyter lab
 
-- Python 3.9+
-- [Jupyter Lab](https://jupyter.org/install)
-- [pandas](https://pandas.pydata.org/)
-- [numpy](https://numpy.org/)
+🖥️ Windows
+Option A — venv + pip
+# 1. Create a virtual environment
+python -m venv inft6201
 
-Install all dependencies with:
+# 2. Activate it
+inft6201\Scripts\Activate
 
-```bash
+# 3. Upgrade pip
+pip install --upgrade pip
+
+# 4. Install requirements
 pip install -r requirements.txt
-```
 
----
-
-## 📓 Learning objectives
-
-By working through the notebook, students will:
-
-- Load and explore data with **pandas**
-- Calculate descriptive statistics: **mean, median, quartiles**
-- Understand measures of spread: **variance, standard deviation**
-- Compute **standard error** and **confidence intervals**
-- Filter and clean datasets in **pandas**
-- Work with categorical variables (e.g., origin of cars)
+# 5. (Optional) Register kernel for Jupyter
+python -m ipykernel install --user --name=inft6201 --display-name "Python (inft6201)"
 
 
+Launch Jupyter:
+
+jupyter lab
+
+Option B — Conda
+# 1. Create environment
+conda env create -f environment.yml -n inft6201
+
+# 2. Activate
+conda activate inft6201
+
+# 3. Register kernel
+python -m ipykernel install --user --name=inft6201 --display-name "Python (inft6201)"
 
 
+Run Jupyter:
 
-Educational use only.
+jupyter lab
